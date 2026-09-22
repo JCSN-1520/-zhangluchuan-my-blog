@@ -1,0 +1,33 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".post-content img");
+
+    images.forEach(function (img) {
+        img.style.cursor = "zoom-in";
+
+        img.addEventListener("click", function () {
+            const overlay = document.createElement("div");
+
+            overlay.className = "image-lightbox";
+
+            overlay.innerHTML = `
+                <img src="${img.src}" alt="${img.alt}">
+            `;
+
+            document.body.appendChild(overlay);
+
+            setTimeout(function () {
+                overlay.classList.add("show");
+            }, 10);
+
+            overlay.addEventListener("click", function () {
+                overlay.classList.remove("show");
+
+                setTimeout(function () {
+                    overlay.remove();
+                }, 200);
+            });
+        });
+    });
+});
+</script>

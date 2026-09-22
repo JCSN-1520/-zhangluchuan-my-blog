@@ -1,0 +1,64 @@
+/* =========================
+   博客图片样式
+   ========================= */
+
+.post-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+/* 图片说明文字 */
+.post-content figure {
+    margin: 25px auto;
+    text-align: center;
+}
+
+.post-content figcaption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+/* =========================
+   图片点击放大
+   ========================= */
+
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    opacity: 0;
+    cursor: zoom-out;
+
+    transition: opacity 0.2s ease;
+}
+
+.image-lightbox.show {
+    opacity: 1;
+}
+
+.image-lightbox img {
+    max-width: 95%;
+    max-height: 90vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    cursor: zoom-out;
+}

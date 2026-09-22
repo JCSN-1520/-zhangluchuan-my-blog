@@ -37,3 +37,20 @@ theme = 'PaperMod'
     name = '关于'
     url = '/about/'
     weight = 20
+
+[[menu.main]]
+    name = '搜索'
+    url = '/search/'
+    weight = 30
+
+[markup]
+    [markup.highlight]
+        noClasses = false
+        lineNos = true
+        lineNumbersInTable = true
+        anchorLineNos = true
+        codeFences = true
+        guessSyntax = true
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
