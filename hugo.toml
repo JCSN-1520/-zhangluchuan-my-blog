@@ -1,0 +1,39 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'zh-cn'
+title = '张鲁川的数字花园'
+theme = 'PaperMod'
+
+[params]
+    author = '张鲁川'
+    defaultTheme = 'auto'
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowCodeCopyButtons = true
+
+[params.homeInfoParams]
+    Title = '你好，我是张鲁川 👋'
+    Content = '''
+一名正在探索信息安全、编程与 AI 的大学生。
+
+这里是我的数字花园，我会记录：
+
+🔐 信息安全学习
+🐍 Python 编程
+🌳 数据结构与算法
+🤖 AI 项目与实践
+💻 有趣的技术
+🧠 对世界的一些思考
+
+不只是记录“学会了什么”，也记录“我为什么这么想”。
+'''
+
+[[menu.main]]
+    name = '文章'
+    url = '/posts/'
+    weight = 10
+
+[[menu.main]]
+    name = '关于'
+    url = '/about/'
+    weight = 20
