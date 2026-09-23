@@ -23,4 +23,4 @@ hello()
 
 这是本次测试的完整 Python 文件：
 
-[下载 hello.py](/hello.py)
+[下载 hello.py](hello.py)
