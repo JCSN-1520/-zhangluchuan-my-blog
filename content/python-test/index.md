@@ -18,3 +18,9 @@ def hello():
     print("Hello, Zhang Luchuan!")
 
 hello()
+
+## Python 源代码
+
+这是本次测试的完整 Python 文件：
+
+[下载 hello.py](/hello.py)
