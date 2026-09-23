@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://jcsn-1520.github.io/-zhangluchuan-my-blog/'
 languageCode = 'zh-cn'
 title = '张鲁川的数字花园'
 theme = 'PaperMod'
@@ -10,6 +10,9 @@ ShowReadingTime = true
 ShowShareButtons = true
 ShowPostNavLinks = true
 ShowCodeCopyButtons = true
+
+# 明确告诉 PaperMod：posts 是主要文章目录
+mainSections = ['posts']
 
 [params.homeInfoParams]
 Title = '你好，我是张鲁川 👋'
@@ -30,7 +33,7 @@ Content = '''
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/JCSN-1520"
+url = 'https://github.com/JCSN-1520'
 
 [[menu.main]]
 name = '文章'
@@ -48,6 +51,7 @@ url = '/search/'
 weight = 30
 
 [markup]
+
 [markup.highlight]
 noClasses = false
 lineNos = true
