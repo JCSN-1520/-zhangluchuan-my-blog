@@ -50,8 +50,6 @@ name = '搜索'
 url = '/search/'
 weight = 30
 
-[markup]
-
 [markup.highlight]
 noClasses = false
 lineNos = true
