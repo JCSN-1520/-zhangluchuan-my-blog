@@ -62,3 +62,9 @@ guessSyntax = true
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      
